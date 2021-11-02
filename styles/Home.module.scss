@@ -1,0 +1,38 @@
+$color-primary: #ffca1d;
+$color-scondary: rgb(73, 9, 62);
+$color-nav: rgb(255, 191, 71);
+
+.nav {
+  position: relative;
+  background-color: $color-nav;
+  text-align: center;
+  margin-top: 0px;
+  padding: 0;
+}
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  background-color: $color-nav;
+}
+.h2 {
+  color: $color-scondary;
+  position: relative;
+  left: auto;
+}
+.a {
+  position: relative;
+  text-decoration: none;
+  background-color: $color-nav;
+  color: $color-scondary;
+}
+
+.btn {
+  position: relative;
+  left: 140px;
+  color: $color-scondary;
+}
+.btn :hover {
+  background-color: white;
+  color: $color-scondary;
+}
