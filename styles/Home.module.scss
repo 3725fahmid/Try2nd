@@ -36,3 +36,38 @@ $color-nav: rgb(255, 191, 71);
   background-color: white;
   color: $color-scondary;
 }
+.FastLook {
+  position: relative;
+  /* top | right | bottom | left */
+  margin: 2em 2em auto 2em;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 179, 37),
+    rgb(255, 255, 255)
+  );
+  text-align: center;
+  color: rgb(255, 0, 0);
+}
+.btn2 {
+  position: absolute;
+  left: 2px;
+  border-radius: 0px;
+  background-color: #ff8c09;
+  width: 15em;
+  height: 7em;
+  box-shadow: 10px 10px 10px rgb(209, 143, 1);
+  color: white;
+  text-size-adjust: 20px;
+  font-size: 0.75em;
+}
+
+.freecls {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-right: 30px;
+  border-radius: 10px;
+}
