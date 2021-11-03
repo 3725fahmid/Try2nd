@@ -36,18 +36,24 @@ export default function Home() {
         <Button className={styles.btn2}>
           <b>Mobile App</b>
         </Button>
-        <div className={styles.freecls}>
-          <p>
-            <b>Your Free Class</b>
-          </p>
-          <p>
-            In vector calculus, the gradient of a scalar-valued differentiable
-            function f of several variables is the vector field (or
-            vector-valued function) ∇f whose value at a point p is the vector
-            whose components are the partial derivatives of f at p. That is, for
-            f:ℝⁿ→ℝ, its gradient ∇f:ℝⁿ→ℝⁿ is defined at the …
-          </p>
-        </div>
+        <Image
+          src="/home.png"
+          alt="Picture of the author"
+          width={1080}
+          height={500}
+        />
+      </div>
+      <div className={styles.freecls}>
+        <p>
+          <b>Your Free Class</b>
+        </p>
+        <p>
+          In vector calculus, the gradient of a scalar-valued differentiable
+          function f of several variables is the vector field (or vector-valued
+          function) ∇f whose value at a point p is the vector whose components
+          are the partial derivatives of f at p. That is, for f:ℝⁿ→ℝ, its
+          gradient ∇f:ℝⁿ→ℝⁿ is defined at the …
+        </p>
       </div>
     </>
   );

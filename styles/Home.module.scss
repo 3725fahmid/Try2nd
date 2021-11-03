@@ -49,15 +49,15 @@ $color-nav: rgb(255, 191, 71);
   text-align: center;
   color: rgb(255, 0, 0);
 }
-.btn2 {
-  position: absolute;
+.FastLook .btn2 {
+  position: relative;
   left: 2px;
   border-radius: 0px;
   background-color: #ff8c09;
   width: 15em;
   height: 7em;
   box-shadow: 10px 10px 10px rgb(209, 143, 1);
-  color: white;
+  color: rgb(0, 0, 0);
   text-size-adjust: 20px;
   font-size: 0.75em;
 }
