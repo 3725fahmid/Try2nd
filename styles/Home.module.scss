@@ -1,6 +1,13 @@
 $color-primary: #ffca1d;
 $color-scondary: rgb(73, 9, 62);
 $color-nav: rgb(255, 191, 71);
+$radius-border: 30px;
+
+.body {
+  background-color: grey;
+  width: auto;
+  height: max-content;
+}
 
 .nav {
   position: relative;
@@ -37,22 +44,19 @@ $color-nav: rgb(255, 191, 71);
   color: $color-scondary;
 }
 .FastLook {
-  position: relative;
   /* top | right | bottom | left */
   margin: 2em 2em auto 2em;
-  border-radius: 10px;
+  border-radius: $radius-border;
   background-image: linear-gradient(
     to right,
     rgb(255, 179, 37),
     rgb(255, 255, 255)
   );
-  text-align: center;
-  color: rgb(255, 0, 0);
 }
-.FastLook .btn2 {
+.Mapp {
   position: relative;
   left: 2px;
-  border-radius: 0px;
+  border-radius: $radius-border;
   background-color: #ff8c09;
   width: 15em;
   height: 7em;
@@ -63,14 +67,19 @@ $color-nav: rgb(255, 191, 71);
 }
 
 .freecls {
+  position: relative;
+  left: 250px;
+  width: 400px;
+  height: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
   text-align: center;
   font-family: arial;
-  margin-right: 30px;
-  border-radius: 10px;
+  border-radius: $radius-border;
   background-color: white;
   color: black;
   padding: 2px;
+}
+
+.TextField {
+  border-radius: 50px;
 }

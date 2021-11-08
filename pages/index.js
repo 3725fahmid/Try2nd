@@ -4,10 +4,13 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 import Link from 'next/link';
 import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import { Input } from '@mui/material';
+import Box from '@mui/material/Box';
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.body}>
       <Head>
         <title>TryBstady</title>
       </Head>
@@ -33,28 +36,46 @@ export default function Home() {
         </Button>
       </ul>
       <div className={styles.FastLook}>
-        <Button className={styles.btn2}>
+        <Button className={styles.Mapp}>
           <b>Mobile App</b>
         </Button>
-        <Image
+        {/* <Image
+          className={styles.Imgfont}
           src="/home.png"
           alt="Picture of the author"
-          width={1080}
-          height={500}
-        />
+          width={300}
+          height={150}
+        /> */}
+        <form className={styles.freecls}>
+          <p>
+            <b>Your Free Class</b>
+          </p>
+          <p>
+            <TextField
+              className={styles.inp1}
+              id="outlined-basic"
+              label="Name"
+              variant="outlined"
+            />
+          </p>
+          <p>
+            <TextField
+              className={styles.inp1}
+              id="outlined-basic"
+              label="Phone Number"
+              variant="outlined"
+            />
+          </p>
+          <p>
+            <TextField
+              // id="outlined-basic"
+              label="Phone Number"
+              // variant="outlined"
+            />
+          </p>
+          <Button className={styles.submit}>Sybmit</Button>
+        </form>
       </div>
-      <div className={styles.freecls}>
-        <p>
-          <b>Your Free Class</b>
-        </p>
-        <p>
-          In vector calculus, the gradient of a scalar-valued differentiable
-          function f of several variables is the vector field (or vector-valued
-          function) ∇f whose value at a point p is the vector whose components
-          are the partial derivatives of f at p. That is, for f:ℝⁿ→ℝ, its
-          gradient ∇f:ℝⁿ→ℝⁿ is defined at the …
-        </p>
-      </div>
-    </>
+    </div>
   );
 }
